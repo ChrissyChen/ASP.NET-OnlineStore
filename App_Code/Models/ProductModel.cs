@@ -67,4 +67,61 @@ public class ProductModel
         }
 
     }
+
+
+    public Product GetProduct(int id)
+    {
+        try
+        {
+            using (OnlineShopDBEntities db = new OnlineShopDBEntities())
+            {
+                Product product = db.Products.Find(id);
+                return product;
+            }
+        }
+        catch (Exception)
+        {
+
+            return null;
+        }
+    }
+
+
+    public List<Product> GetAllProducts()
+    {
+        try
+        {
+            using (OnlineShopDBEntities db = new OnlineShopDBEntities())
+            {
+                List<Product> products = (from x in db.Products
+                                          select x).ToList();
+                return products;
+            }
+        }
+        catch (Exception)
+        {
+
+            return null;
+        }
+    }
+
+    public List<Product>GetProductsByType(int typeID)
+    {
+        try
+        {
+            using (OnlineShopDBEntities db = new OnlineShopDBEntities())
+            {
+                List<Product> products = (from x in db.Products
+                                          where x.TypeId == typeID
+                                          select x).ToList();
+                return products;
+            }
+        }
+        catch (Exception)
+        {
+            return null;
+        }
+
+
+    }
 }

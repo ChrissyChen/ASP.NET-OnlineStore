@@ -21,7 +21,7 @@
                     <li><asp:HyperLink ID="HyperLink1" runat="server">Webshop</asp:HyperLink></li>
                     <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Pages/About.aspx">About me</asp:HyperLink></li>
                     <li><asp:HyperLink ID="HyperLink3" runat="server">Reports</asp:HyperLink></li>
-                    <li><asp:HyperLink ID="HyperLink4" runat="server">Management</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Pages/Management/Management.aspx">Management</asp:HyperLink></li>
                 </ul>
             </div>
             <div id="content">                
