@@ -15,7 +15,7 @@ public class CartModel
             OnlineShopDBEntities db = new OnlineShopDBEntities();
             db.Carts.Add(cart);
             db.SaveChanges();
-            return cart.DatePurchased + " was succesfully inserted to db";
+            return "Order was succesfully inserted";
         }
         catch (Exception ex)
         {
