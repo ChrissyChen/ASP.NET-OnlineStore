@@ -59,7 +59,8 @@
      
 }
 #nav a:hover{
-    background-color:white ;        
+    background-color:white ;       
+     
 }
 #content{
     padding: 20px ;
@@ -71,17 +72,17 @@
 {
 
     float:left;
-    width:250px ;
-    height:250px ;
+    width:260px ;
+    height:260px ;
     text-align:center ;
 }
 
 .productImage
 {
-    width: 200px ;
+    width: 250px ;
     height: 200px ;
     vertical-align: central;
-    padding: 5px ;
+    padding: 0px ;
     border-radius: 0px ;
     -moz-border-radius: 50px;
     -webkit-border-radius: 0;
@@ -93,12 +94,13 @@
 .productName
 {
 
-    font-size:18px ;
+    font-size:25px ;
     font-weight: bold ;
 
 }
 .productPrice
 {
+    font-size:25px ;
     font-family: Arial,Arial, Helvetica, sans-serif;
     font-weight: bold ;
     color: #FFB600;
